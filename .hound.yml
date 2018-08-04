@@ -1,0 +1,17 @@
+ruby:
+  config_file: .rubocop.yml
+
+eslint:
+  enabled: false
+  config_file: .eslintrc
+
+scss:
+  enabled: false
+  config_file: .scss-lint.yml
+
+sass-lint:
+  enabled: false
+
+coffeescript:
+  enabled: false
+  config_file: coffeelint.json
