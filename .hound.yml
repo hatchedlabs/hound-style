@@ -2,6 +2,10 @@ coffeescript:
   enabled: false
   config_file: coffeescript/coffeelint.json
 
+credo:
+  enabled: true
+  config_file: elixir/.credo.exs
+
 eslint:
   enabled: true
   config_file: javascript/.eslintrc.json
