@@ -181,14 +181,14 @@ linters:
 
   SpaceAfterPropertyColon:
     enabled: true
-    style: one_space
+    style: at_least_one_space
 
   SpaceAfterPropertyName:
     enabled: true
 
   SpaceAfterVariableColon:
     enabled: true
-    style: one_space
+    style: at_least_one_space
 
   SpaceAfterVariableName:
     enabled: true
