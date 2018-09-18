@@ -238,7 +238,7 @@ linters:
     enabled: false
 
   VendorPrefix:
-    enabled: true
+    enabled: false
     identifier_list: base
 
   ZeroUnit:
