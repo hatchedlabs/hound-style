@@ -18,7 +18,8 @@
       "modules": true,
       "arrowFunctions": true,
       "forOf": true,
-      "classes": true
+      "classes": true,
+      "experimentalObjectRestSpread": true
     },
     "sourceType": "module"
   },
