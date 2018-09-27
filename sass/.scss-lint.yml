@@ -141,7 +141,7 @@ linters:
       'dpi', 'dpcm', 'dppx',
       '%']
     properties:
-      line-height: []
+      line-height: ['px','em','rem']
 
   PseudoElement:
     enabled: true
