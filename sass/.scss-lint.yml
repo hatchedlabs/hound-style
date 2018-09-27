@@ -144,7 +144,7 @@ linters:
       line-height: ['px','em','rem']
 
   PseudoElement:
-    enabled: true
+    enabled: false
 
   QualifyingElement:
     enabled: true
