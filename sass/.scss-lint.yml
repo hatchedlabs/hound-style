@@ -34,7 +34,7 @@ linters:
     enabled: true
 
   DeclarationOrder:
-    enabled: true
+    enabled: false
 
   DisableLinterReason:
     enabled: false
@@ -106,7 +106,7 @@ linters:
   NestingDepth:
     enabled: true
     max_depth: 4
-    ignore_parent_selectors: false
+    ignore_parent_selectors: true
 
   PlaceholderInExtend:
     enabled: true
