@@ -95,7 +95,7 @@ linters:
     enabled: false
 
   MergeableSelector:
-    enabled: true
+    enabled: false
     force_nesting: true
 
   NameFormat:
@@ -104,7 +104,7 @@ linters:
     convention: hyphenated_lowercase
 
   NestingDepth:
-    enabled: true
+    enabled: false
     max_depth: 4
     ignore_parent_selectors: true
 
@@ -153,7 +153,7 @@ linters:
     allow_element_with_id: false
 
   SelectorDepth:
-    enabled: true
+    enabled: false
     max_depth: 4
 
   SelectorFormat:
