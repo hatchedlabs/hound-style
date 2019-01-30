@@ -146,7 +146,7 @@ Security/Eval:
   Enabled: true
 
 Style/BlockDelimiters:
-  EnforcedStyle: line_count_based
+  EnforcedStyle: braces_for_chaining
 
 Style/EmptyElse:
   Enabled: true
