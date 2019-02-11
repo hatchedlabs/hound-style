@@ -146,7 +146,7 @@ Security/Eval:
   Enabled: true
 
 Style/BlockDelimiters:
-  EnforcedStyle: braces_for_chaining
+  EnforcedStyle: semantic
 
 Style/EmptyElse:
   Enabled: true
