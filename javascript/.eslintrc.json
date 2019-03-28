@@ -33,12 +33,7 @@
     "complexity": [1, 8],
     "no-alert": 1,
     "no-invalid-this": 0,
-    "no-labels": [
-      1,
-      {
-        "allowLoop": true
-      }
-    ],
+    "no-labels": [1, { "allowLoop": true }],
     "max-len": [1, 80],
     "no-negated-condition": 1,
     "no-nested-ternary": 2,
