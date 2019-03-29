@@ -39,7 +39,13 @@
         "allowLoop": true
       }
     ],
-    "max-len": [1, 80],
+    "max-len": [
+      1,
+      {
+        "code": 80,
+        "ignorePattern": "^import"
+      }
+    ],
     "no-negated-condition": 1,
     "no-nested-ternary": 2,
     "prefer-const": 2,
