@@ -10,6 +10,10 @@ eslint:
   enabled: true
   config_file: javascript/.eslintrc.json
 
+flake8:
+  enabled: true
+  config_file: python/.flake8
+
 ruby:
   enabled: true
   config_file: ruby/.rubocop.yml
