@@ -29,13 +29,7 @@
     "no-alert": 1,
     "no-invalid-this": 0,
     "no-labels": [1, { "allowLoop": true }],
-    "max-len": [
-      1,
-      {
-        "code": 80,
-        "ignorePattern": "^import"
-      }
-    ],
+    "max-len": 0,
     "no-negated-condition": 1,
     "no-nested-ternary": 2,
     "prefer-const": 2,
