@@ -46,7 +46,9 @@
     "jsx-a11y/no-autofocus": 1,
     "jsx-a11y/no-onchange": 0,
     "jsx-a11y/no-static-element-interactions": 0,
-
+    "jsx-a11y/label-has-for": [2, {
+      "required": { "every": ["nesting"] }
+    }],
     "react/button-has-type": 1,
     "react/destructuring-assignment": 0,
     "react/display-name": 2,
