@@ -91,11 +91,11 @@ def one_function():
     var1 = 'smth'
     var2 = call_some_function()
     var3 = 123
-    call_somethin_else()
+    call_something_else()
     # some comments about what we expect from do_some_operations()
     res = do_some_operations()
     return is_jon_snow_going_to_be_king_of_the_seven_kingdoms(res)
-def another_function(arg1,be_king):
+def another_function(arg1, be_king):
     var1 = 'smth'
     some_other_logic()
     sopranos_is_still_the_best()
@@ -109,7 +109,7 @@ def one_function():
     var2 = call_some_function()
     var3 = 123
 
-    call_somethin_else()
+    call_something_else()
 
     # some comments about what we expect from do_some_operations()
     res = do_some_operations()
@@ -117,7 +117,7 @@ def one_function():
     return is_jon_snow_going_to_be_king_of_the_seven_kingdoms(res)
 
 
-def another_function(arg1,be_king):
+def another_function(arg1, be_king):
     var1 = 'smth'
     some_other_logic()
     sopranos_is_still_the_best()
@@ -137,7 +137,7 @@ However, in practice, this can be too short, especially when variables and funct
 
 No need to scroll the page horizontally when reading 2 files side by side. This helps when writing tests in one file and the code in another but also when fixing Git conflicts. Longer than 100 characters makes comparing files more difficult.
 
-PR review is more difficult when you need to scroll horizontally to read a file.
+PR review is more difficult when you need to scroll horizontally to read a file, you can loose context.
 
 Word wrapping is confusing for code and makes the context difficult to understand. Specially for Python where block separation relies on indentation.
 
