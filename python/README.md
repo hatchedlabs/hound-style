@@ -18,8 +18,11 @@ pip install flake8-bugbear
 # I - checks the ordering of imports: from Python core to local
 pip install flake8-import-order
 
-# No "dead" code
+# no "dead" code
 pip install flake8-eradicate
+
+# better comprehensions
+pip install flake8-comprehensions
 ```
 
 It's highly recommended to install the extensions and lint the code locally as part of each commit (see the "Local setup" section). This would ensure a common way of writing and reading code in the organisation.
