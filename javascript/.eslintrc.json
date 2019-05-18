@@ -88,5 +88,13 @@
     "react/prefer-stateless-function": [1, { "ignorePureComponents": true }],
     "react/require-optimization": 1,
     "react/sort-prop-types": 0
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.test.js"],
+      "rules": {
+        "react/prop-types": 0
+      }
+    }
+  ]
 }
