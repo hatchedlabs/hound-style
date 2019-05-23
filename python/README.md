@@ -68,6 +68,28 @@ Example config (path specific to local machine):
 
 ## Rules
 
+### E221, E222 whitespace around operator
+
+PEP8 [recommends](https://www.python.org/dev/peps/pep-0008/#other-recommendations) having a single whitespace around operators. We allow multiple whitespaces around operators, but the flexibility is for `=` only.
+
+**Why?**
+
+In practice, we might want to align variable assignment for readability.
+
+```
+# accepted
+variable                       = 'one'
+longer_variable_name           = 'two'
+the_longest_variable_name_here = 'three'
+
+# bad - programmer's responsibility
+x =   4  *     5
+
+# good
+x = 4 * 5
+```
+
+### 
 ### E265, E266 block comment should start with '# ' and only one '#'
 
 Part of [PEP8](https://www.python.org/dev/peps/pep-0008/#block-comments):
@@ -97,11 +119,11 @@ def one_function():
     call_something_else()
     # some comments about what we expect from do_some_operations()
     res = do_some_operations()
-    return is_jon_snow_going_to_be_king_of_the_seven_kingdoms(res)
-def another_function(arg1, be_king):
+    return parse_the_result_of_oeperations(res)
+def another_function(arg1, arg2):
     var1 = 'smth'
     some_other_logic()
-    sopranos_is_still_the_best()
+    and_yet_another_function()
 
 
 # good
@@ -117,16 +139,35 @@ def one_function():
     # some comments about what we expect from do_some_operations()
     res = do_some_operations()
 
-    return is_jon_snow_going_to_be_king_of_the_seven_kingdoms(res)
+    return parse_the_result_of_oeperations(res)
 
 
-def another_function(arg1, be_king):
+def another_function(arg1, arg2):
     var1 = 'smth'
     some_other_logic()
-    sopranos_is_still_the_best()
+    and_yet_another_function()
 ```
 
-### E501 Line length
+### E402 module level imports
+
+Part of [PEP8](https://www.python.org/dev/peps/pep-0008/#imports):
+
+> Imports are always put at the top of the file, just after any module comments and docstrings, and before module globals and constants.
+
+**Why?**
+
+Dependencies are declared in one place and it keeps a module or class organized. When reading the file it's easy to understand what to expect from it and which are the other libraries or modules it relies on. It's also a commond best practice with other programming languages.
+
+**Exception**
+
+If however an import is justified to not be at the beginning of the file, for example a conditional import, the rule can be specifically disabled for that particular exception:
+
+```
+# accepted in anywhere with very good reason
+import sys  # noqa: E402
+```
+
+### E501 line length
 
 [PEP8](https://www.python.org/dev/peps/pep-0008/#maximum-line-length) recommends 79 & 72 characters for a line length:
 
@@ -144,4 +185,11 @@ PR review is more difficult when you need to scroll horizontally to read a file,
 
 Word wrapping is confusing for code and makes the context difficult to understand. Specially for Python where block separation relies on indentation.
 
+## Exceptions
 
+Sometimes, we have really good reasons for ignoring a certain rule. Instead of disabling the rule completely, we can just [disable](https://flake8.pycqa.org/en/3.7.7/user/violations.html?highlight=ignore#in-line-ignoring-errors) it specifically when we want to:
+
+```
+# ignore both E402 and I100 for this line
+import sys  # noqa: E402,I100
+```
