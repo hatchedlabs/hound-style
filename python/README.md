@@ -70,7 +70,7 @@ Example config (path specific to local machine):
 
 ### E221, E222 whitespace around operator
 
-PEP8 [recommends](https://www.python.org/dev/peps/pep-0008/#other-recommendations) having a single whitespace around operators. We allow multiple whitespaces around operators, but the flexibility is for `=` only.
+PEP8 recommends [here](https://www.python.org/dev/peps/pep-0008/#other-recommendations) and [here](https://www.python.org/dev/peps/pep-0008/#pet-peeves) having a single whitespace around operators. We allow multiple whitespaces around operators, but the flexibility is intended for `=` only.
 
 **Why?**
 
@@ -89,7 +89,24 @@ x =   4  *     5
 x = 4 * 5
 ```
 
-### 
+### E241 whitespace after ',' or ':'
+
+Similar to E221 and E222 above, PEP8 [recommends](https://www.python.org/dev/peps/pep-0008/#pet-peeves) a single whitespace after ','. While this should be true in many cases we might want to allow aligning dictionaries key-value pairs for better visibility:
+
+```
+# accepted
+{
+    'vendor':        'Giant Eagle',
+    'brand':         'Egglands Best',
+    'name':          "Eggland's Best Large White Eggs",
+    'pricing_model': 'unit_price'
+}
+
+# still bad
+def a_function(arg1,    arg2,  arg3):
+    ...
+```
+
 ### E265, E266 block comment should start with '# ' and only one '#'
 
 Part of [PEP8](https://www.python.org/dev/peps/pep-0008/#block-comments):
