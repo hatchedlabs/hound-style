@@ -108,7 +108,7 @@ Similar to E221 and E222 above, PEP8 [recommends](https://www.python.org/dev/pep
     'pricing_model': 'unit_price'
 }
 
-# still bad
+# still bad - programmer's responsibility
 def a_function(arg1,    arg2,  arg3):
     ...
 ```
