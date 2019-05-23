@@ -27,6 +27,12 @@ pip install flake8-comprehensions
 
 It's highly recommended to install the extensions and lint the code locally as part of each commit (see the "Local setup" section). This would ensure a common way of writing and reading code in the organisation.
 
+Install all extensions with:
+
+```
+pip install -r requirements.txt
+```
+
 ## Local setup
 
 Clone the [Hatched style repo](https://github.com/hatchedlabs/hound-style) on your machine, maybe on the same level as other Hatched projects. The path would be important for reference later.
