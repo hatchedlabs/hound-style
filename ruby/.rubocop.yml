@@ -164,8 +164,7 @@ Style/WordArray:
   Enabled: false
 Style/AndOr:
   EnforcedStyle: conditionals
-Style/NegatedIf:
-  Enabled: false
+
 Style/SafeNavigation:
   Description: 'Use safe navigation (&.) instead of checking if an object exists before calling the method.'
   Enabled: false
