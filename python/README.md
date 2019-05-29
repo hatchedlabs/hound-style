@@ -72,6 +72,23 @@ Example config (path specific to local machine):
 }
 ```
 
+### Atom
+
+Install the Linter packages, first the base package:
+
+[Linter](https://atom.io/packages/linter)
+
+Then install the flake8 package: [linter-flake8](https://atom.io/packages/linter-flake8)
+
+It will automatically install other prerequisite packages as well.
+
+In the Flake8 package settings (Packages -> Settings View -> Manage Packages), you can set the Project Config File to the `.flake8` config file. You'll have to do this for each project/repo.
+
+If you want to use the linter with virtualenvs (you probably do) then you'll need the [atom-python-virtualenv](https://atom.io/packages/atom-python-virtualenv) package. The reason why you want to use flake8 with virtualenvs is so that it'll know what modules you have installed.
+
+You might have additional virtualenvs that are not in your project home directory. If they're not, then add their paths to the `Additional virtualenvs` setting, with a value such as `/Users/jack/grocery-data/airflow_dev/`.
+
+
 ## Rules
 
 ### E221, E222 whitespace around operator
