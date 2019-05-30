@@ -20,7 +20,7 @@
     "no-multi-spaces": 1,
     "jsx-quotes": [1, "prefer-double"],
     "no-extra-semi": 1,
-    "quotes": [1, "double"],
+    "quotes": [0, "double"], // ignoring only on hound because of false positives due to fragments
     "semi": [1, "always"],
     "no-console": [2, { "allow": ["warn", "error"] }],
     "comma-dangle": 1,
