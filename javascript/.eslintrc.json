@@ -25,7 +25,7 @@
     "no-console": [2, { "allow": ["warn", "error"] }],
     "comma-dangle": 1,
     "block-scoped-var": 1,
-    "complexity": [1, 8],
+    "complexity": [0, 8],
     "no-alert": 1,
     "no-invalid-this": 0,
     "no-labels": [1, { "allowLoop": true }],
@@ -46,9 +46,17 @@
     "jsx-a11y/no-autofocus": 1,
     "jsx-a11y/no-onchange": 0,
     "jsx-a11y/no-static-element-interactions": 0,
-    "jsx-a11y/label-has-for": [2, {
-      "required": { "every": ["nesting"] }
-    }],
+    "jsx-a11y/alt-text": [
+      2,
+      {
+        "elements": ["img", "object", "area", "input[type=\"image\"]"],
+        "img": ["Image"],
+        "object": ["Object"],
+        "area": ["Area"],
+        "input[type=\"image\"]": ["InputImage"]
+      }
+    ],
+
     "react/button-has-type": 1,
     "react/destructuring-assignment": 0,
     "react/display-name": 2,
@@ -57,6 +65,7 @@
       1,
       {
         "forbid": [
+          { "element": "a", "message": "Use <SharedButton> or <Link> instead" },
           { "element": "button", "message": "Use <SharedButton> instead" },
           { "element": "table", "message": "Use flexbox instead" }
         ]
