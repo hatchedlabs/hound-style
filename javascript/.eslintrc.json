@@ -56,6 +56,10 @@
         "input[type=\"image\"]": ["InputImage"]
       }
     ],
+    "jsx-a11y/label-has-associated-control": [ 2, {
+      "assert": "nesting",
+      "depth": 3,
+    }],
 
     "react/button-has-type": 1,
     "react/destructuring-assignment": 0,
