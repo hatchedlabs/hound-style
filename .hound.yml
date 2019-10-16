@@ -18,6 +18,9 @@ ruby:
   enabled: true
   config_file: ruby/.rubocop.yml
 
+rubocop:
+  version: 0.69.0
+
 scss:
   enabled: true
   config_file: sass/.scss-lint.yml
