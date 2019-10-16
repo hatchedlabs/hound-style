@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 2.6
   Exclude:
     - 'db/schema.rb'
 
@@ -147,6 +147,8 @@ Security/Eval:
 
 Style/BlockDelimiters:
   EnforcedStyle: semantic
+  Exclude:
+    - spec/**/*_spec.rb
 
 Style/EmptyElse:
   Enabled: true
