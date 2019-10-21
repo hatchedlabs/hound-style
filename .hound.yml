@@ -19,7 +19,9 @@ ruby:
   config_file: ruby/.rubocop.yml
 
 rubocop:
+  enabled: true
   version: 0.72.0
+  config_file: ruby/.rubocop.yml
 
 scss:
   enabled: true
