@@ -9,6 +9,11 @@ Documentation:
 Bundler/OrderedGems:
   Enabled: false
 
+# Most readable form.
+Layout/AlignHash:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+
 Layout/DotPosition:
   Enabled: true
   EnforcedStyle: leading
@@ -217,18 +222,9 @@ Style/StringLiterals:
 Style/SymbolArray:
   Enabled: true
 
-# Most readable form.
-Style/AlignHash:
-  EnforcedHashRocketStyle: table
-  EnforcedColonStyle: table
-
 # Mixing the styles looks just silly.
 Style/HashSyntax:
   EnforcedStyle: ruby19_no_mixed_keys
-
-# has_key? and has_value? are far more readable than key? and value?
-Style/DeprecatedHashMethods:
-  Enabled: false
 
 # A specialized exception class will take one or more arguments and construct the message from it.
 # So both variants make sense.
