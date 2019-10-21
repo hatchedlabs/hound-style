@@ -9,10 +9,8 @@ Documentation:
 Bundler/OrderedGems:
   Enabled: false
 
-# Most readable form.
 Layout/AlignHash:
-  EnforcedHashRocketStyle: table
-  EnforcedColonStyle: table
+  Enabled: false
 
 Layout/DotPosition:
   Enabled: true
