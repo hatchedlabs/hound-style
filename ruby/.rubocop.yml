@@ -216,9 +216,8 @@ Style/StringLiterals:
   Enabled: false
   EnforcedStyle: double_quotes
 
-# We do not need to support Ruby 1.9, so this is good to use.
 Style/SymbolArray:
-  Enabled: true
+  Enabled: false
 
 # Mixing the styles looks just silly.
 Style/HashSyntax:
