@@ -225,6 +225,25 @@ PR review is more difficult when you need to scroll horizontally to read a file,
 
 Word wrapping is confusing for code and makes the context difficult to understand. Specially for Python where block separation relies on indentation.
 
+### W503, W504 line break for binary operators
+
+[PEP8](https://www.python.org/dev/peps/pep-0008/#should-a-line-break-before-or-after-a-binary-operator) recommends a math-like formatting:
+
+> Donald Knuth explains the traditional rule in his Computers and Typesetting series: "Although formulas within a paragraph always break after binary operations and relations, displayed formulas always break before binary operations"
+>
+> In Python code, it is permissible to break before or after a binary operator, as long as the convention is consistent locally. For new code Knuth's style is suggested.
+
+Example:
+
+```
+# Yes: easy to match operators with operands
+income = (gross_wages
+          + taxable_interest
+          + (dividends - qualified_dividends)
+          - ira_deduction
+          - student_loan_interest)
+```
+
 ## Exceptions
 
 Sometimes, we have really good reasons for ignoring a certain rule. Instead of disabling the rule completely, we can just [disable](https://flake8.pycqa.org/en/3.7.7/user/violations.html?highlight=ignore#in-line-ignoring-errors) it specifically when we want to:
