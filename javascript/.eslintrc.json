@@ -16,7 +16,7 @@
   "parser": "babel-eslint",
   "plugins": ["jsx-a11y"],
   "rules": {
-    "indent": 1,
+    "indent": 0,
     "no-multi-spaces": 1,
     "jsx-quotes": [1, "prefer-double"],
     "no-extra-semi": 1,
