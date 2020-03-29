@@ -1,4 +1,8 @@
 [flake8]
 max-line-length = 100
-select = C,E,F,W,B,Q0,B9,I
+select = C,E,F,W,B,Q0,B9,I,A,T,N,H
 ignore = BLK100,E221,E222,E241,W503
+
+# Ideally we'd have a 5 here, but allowing 10 as less than 10 is usually considered easy to
+# maintain
+max-complexity = 10

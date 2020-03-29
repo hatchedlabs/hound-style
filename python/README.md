@@ -6,23 +6,32 @@ A list of complete rules can be found at [https://lintlyci.github.io/Flake8Rules
 
 Flake8 also supports [extensions](https://github.com/DmytroLitvinov/awesome-flake8-extensions) which can help adding more constraints or verifying more code issues. Unfortunately, Hound doesn't allow installing anything we'd like to but we can compensate installing the extensions locally.
 
-A few recommended extensions (already enabled in [.flake8](.flake8) config file):
+Extensions already enabled in [.flake8](.flake8) config file:
 
 ```
-# Q0 - always expect single quotes
-pip install flake8-quotes
+# B6 - check forgotten breakpoints
+flake8-breakpoint
 
 # B9 - find likely bugs and design problems in your program
-pip install flake8-bugbear
+flake8-bugbear
 
-# I - checks the ordering of imports: from Python core to local
-pip install flake8-import-order
-
-# no "dead" code
-pip install flake8-eradicate
+# A - check for python builtins being used as variables or parameters
+flake8-builtins
 
 # better comprehensions
-pip install flake8-comprehensions
+flake8-comprehensions
+
+# no "dead" code
+flake8-eradicate
+
+# I - checks the ordering of imports: from Python core to local
+flake8-import-order
+
+# Q0 - always expect single quotes
+flake8-quotes
+
+# PEP8 naming conventions
+pep8-naming
 ```
 
 It's highly recommended to install the extensions and lint the code locally as part of each commit (see the "Local setup" section). This would ensure a common way of writing and reading code in the organisation.
