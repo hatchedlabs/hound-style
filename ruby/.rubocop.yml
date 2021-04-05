@@ -1,3 +1,6 @@
+require:
+  - rubocop-rails
+
 AllCops:
   TargetRubyVersion: 2.6
   Exclude:
@@ -233,3 +236,9 @@ Style/RaiseArgs:
 # there's Kernel#abort for that.
 Style/SignalException:
   EnforcedStyle: only_raise
+
+Rails/Date
+  EnforcedStyle: flexible
+
+Rails/TimeZone
+  EnforcedStyle: flexible
