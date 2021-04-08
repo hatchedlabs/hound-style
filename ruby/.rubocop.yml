@@ -237,8 +237,8 @@ Style/RaiseArgs:
 Style/SignalException:
   EnforcedStyle: only_raise
 
-Rails/Date
+Rails/Date:
   EnforcedStyle: flexible
 
-Rails/TimeZone
+Rails/TimeZone:
   EnforcedStyle: flexible
