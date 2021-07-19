@@ -7,7 +7,7 @@ credo:
   config_file: elixir/.credo.exs
 
 eslint:
-  enabled: true
+  enabled: false
   config_file: javascript/.eslintrc.json
 
 flake8:
