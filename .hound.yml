@@ -8,7 +8,6 @@ credo:
 
 eslint:
   enabled: false
-  config_file: javascript/.eslintrc.json
 
 flake8:
   enabled: true
