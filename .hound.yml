@@ -22,7 +22,7 @@ ruby:
 
 rubocop:
   enabled: true
-  version: 0.72.0
+  version: 1.51.0
   config_file: ruby/.rubocop.yml
 
 scss:
