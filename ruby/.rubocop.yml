@@ -54,6 +54,10 @@ Layout/ExtraSpacing:
   # When true, forces the alignment of `=` in assignments on consecutive lines.
   ForceEqualSignAlignment: false
 
+Layout/LineLength:
+  Max: 120
+  Enabled: false
+
 Layout/MultilineMethodCallBraceLayout:
   Enabled: false
 
@@ -95,9 +99,6 @@ Layout/SpaceInsideStringInterpolation:
 # Line count of things
 Metrics/ClassLength:
   Max: 2000
-  Enabled: false
-Metrics/LineLength:
-  Max: 120
   Enabled: false
 Metrics/ModuleLength:
   Max: 1000
