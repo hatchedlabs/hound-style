@@ -245,7 +245,7 @@ Rails/TimeZone:
   EnforcedStyle: flexible
 
 # new rules added from upgrading version. we need to evaluate before turning them on
-Gemspec/DateAssignment: # new in 1.10
+Gemspec/DeprecatedAttributeAssignment:
   Enabled: false
 Layout/LineEndStringConcatenationIndentation: # new in 1.18
   Enabled: false
